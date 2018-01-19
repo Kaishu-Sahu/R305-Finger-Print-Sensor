@@ -44,7 +44,6 @@ class Enroll:
 		else:
 			print("Internal Error")
 
-
 	def body(self,comment):
 		print(comment)
 		sys.stdout.flush()

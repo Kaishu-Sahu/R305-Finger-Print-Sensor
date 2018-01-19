@@ -21,7 +21,7 @@ class Search:
 			r = self.baseMethod.search()
 			if r[0] == 0:
 				print("success")
-				return [r[1]+r[2]]
+				return [r[0]+r[1]+r[2]]
 			else:
-				print("failure")
+				print("Finger isn't registered")
 				return [123456]

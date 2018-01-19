@@ -16,7 +16,7 @@ class RegisterUser:
 			a = self.srh.main()
 			if a[0] != 123456:
 				try:
-					fp = open('file.txt','r')
+					fp = open('record.txt','r')
 					for line in fp:
 						arg1, arg2 = line.split(',')
 						if arg1 == a[1] and arg2 == (a[2]+"\n"):
@@ -31,4 +31,10 @@ class RegisterUser:
 				pass
 
 		if b:
-			self.enr.main(1)
+			c = self.srh.main()
+			if c[0]:
+				self.enr.main(1)
+			else:
+				print("Already registered")
+		else:
+			print("Finger isn't authorized")
