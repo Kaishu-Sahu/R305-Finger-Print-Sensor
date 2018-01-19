@@ -16,7 +16,7 @@ class RegisterUser:
 			a = self.srh.main()
 			if a[0] != 123456:
 				try:
-					fp = open('record.txt','r')
+					fp = open('records.txt','r')
 					for line in fp:
 						arg1, arg2 = line.split(',')
 						if arg1 == a[1] and arg2 == (a[2]+"\n"):
