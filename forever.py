@@ -21,28 +21,34 @@ def mButPressed():
 
 	if count == 1:
 		print("Register User")
+		while but.button_1() and but.button_2():
+			pass
 		timestamp1 = time.time()
 		while (time.time()-timestamp1) <= 120:
 			if but.button_2():
 				sButPressed("Register User")
 			elif but.button_1():
-				count+=1
+				count += 1
 				break
-	elif count == 2:
+
+	if count == 2:
+		while but.button_1() and but.button_2():
+			pass
 		print("Register Authorizer")
 		timestamp1 = time.time()
 		while (time.time()-timestamp1) <= 120:
 			if but.button_2():
 				sButPressed("Register Authorizer")
 			elif but.button_1():
-				count+=1
+				count += 1
 				break
 
 	else:
-		print("Put Finger")
 		count = 0
 
 
+while but.button_1() and but.button_2():
+	pass
 while True:
 	if but.button_1():
 		mButPressed()
