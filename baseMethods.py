@@ -1,5 +1,4 @@
-import serial, time, datetime, struct
-import sys
+import serial, time, struct
 
 
 class BaseMethods:

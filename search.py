@@ -4,7 +4,7 @@ import baseMethods
 
 class Search:
 
-	baseMethod =  baseMethods.BaseMethods()
+	baseMethod = baseMethods.BaseMethods()
 
 	def __init__(self):
 		pass
